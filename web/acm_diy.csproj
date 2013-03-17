@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB6F5712-251A-4032-BF50-76E2B87ED37F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>acm_diy</RootNamespace>
+    <AssemblyName>acm_diy</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\coders.css" />
+    <Content Include="img\0.gif" />
+    <Content Include="img\1.gif" />
+    <Content Include="img\10.gif" />
+    <Content Include="img\100.gif" />
+    <Content Include="img\101.gif" />
+    <Content Include="img\102.gif" />
+    <Content Include="img\103.gif" />
+    <Content Include="img\104.gif" />
+    <Content Include="img\11.gif" />
+    <Content Include="img\12.gif" />
+    <Content Include="img\13.gif" />
+    <Content Include="img\14.gif" />
+    <Content Include="img\15.gif" />
+    <Content Include="img\16.gif" />
+    <Content Include="img\17.gif" />
+    <Content Include="img\18.gif" />
+    <Content Include="img\19.gif" />
+    <Content Include="img\2.gif" />
+    <Content Include="img\20.gif" />
+    <Content Include="img\21.gif" />
+    <Content Include="img\22.gif" />
+    <Content Include="img\23.gif" />
+    <Content Include="img\24.gif" />
+    <Content Include="img\25.gif" />
+    <Content Include="img\26.gif" />
+    <Content Include="img\27.gif" />
+    <Content Include="img\28.gif" />
+    <Content Include="img\29.gif" />
+    <Content Include="img\3.gif" />
+    <Content Include="img\30.gif" />
+    <Content Include="img\31.gif" />
+    <Content Include="img\32.gif" />
+    <Content Include="img\33.gif" />
+    <Content Include="img\34.gif" />
+    <Content Include="img\35.gif" />
+    <Content Include="img\36.gif" />
+    <Content Include="img\37.gif" />
+    <Content Include="img\38.gif" />
+    <Content Include="img\39.gif" />
+    <Content Include="img\4.gif" />
+    <Content Include="img\40.gif" />
+    <Content Include="img\41.gif" />
+    <Content Include="img\42.gif" />
+    <Content Include="img\43.gif" />
+    <Content Include="img\44.gif" />
+    <Content Include="img\45.gif" />
+    <Content Include="img\46.gif" />
+    <Content Include="img\47.gif" />
+    <Content Include="img\48.gif" />
+    <Content Include="img\49.gif" />
+    <Content Include="img\5.gif" />
+    <Content Include="img\50.gif" />
+    <Content Include="img\51.gif" />
+    <Content Include="img\52.gif" />
+    <Content Include="img\53.gif" />
+    <Content Include="img\54.gif" />
+    <Content Include="img\55.gif" />
+    <Content Include="img\56.gif" />
+    <Content Include="img\57.gif" />
+    <Content Include="img\58.gif" />
+    <Content Include="img\59.gif" />
+    <Content Include="img\6.gif" />
+    <Content Include="img\60.gif" />
+    <Content Include="img\61.gif" />
+    <Content Include="img\62.gif" />
+    <Content Include="img\63.gif" />
+    <Content Include="img\64.gif" />
+    <Content Include="img\65.gif" />
+    <Content Include="img\66.gif" />
+    <Content Include="img\67.gif" />
+    <Content Include="img\68.gif" />
+    <Content Include="img\69.gif" />
+    <Content Include="img\7.gif" />
+    <Content Include="img\70.gif" />
+    <Content Include="img\71.gif" />
+    <Content Include="img\72.gif" />
+    <Content Include="img\73.gif" />
+    <Content Include="img\74.gif" />
+    <Content Include="img\75.gif" />
+    <Content Include="img\76.gif" />
+    <Content Include="img\77.gif" />
+    <Content Include="img\78.gif" />
+    <Content Include="img\79.gif" />
+    <Content Include="img\8.gif" />
+    <Content Include="img\80.gif" />
+    <Content Include="img\81.gif" />
+    <Content Include="img\82.gif" />
+    <Content Include="img\83.gif" />
+    <Content Include="img\84.gif" />
+    <Content Include="img\85.gif" />
+    <Content Include="img\86.gif" />
+    <Content Include="img\87.gif" />
+    <Content Include="img\88.gif" />
+    <Content Include="img\89.gif" />
+    <Content Include="img\9.gif" />
+    <Content Include="img\90.gif" />
+    <Content Include="img\91.gif" />
+    <Content Include="img\92.gif" />
+    <Content Include="img\93.gif" />
+    <Content Include="img\94.gif" />
+    <Content Include="img\95.gif" />
+    <Content Include="img\96.gif" />
+    <Content Include="img\97.gif" />
+    <Content Include="img\98.gif" />
+    <Content Include="img\99.gif" />
+    <Content Include="img\e.gif" />
+    <Content Include="img\h.gif" />
+    <Content Include="img\kxfzg.gif" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="auto.ashx.cs">
+      <DependentUpon>auto.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CSPY.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Face.aspx.cs">
+      <DependentUpon>Face.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Face.aspx.designer.cs">
+      <DependentUpon>Face.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs" />
+    <Compile Include="HighestRating.aspx.cs">
+      <DependentUpon>HighestRating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HighestRating.aspx.designer.cs">
+      <DependentUpon>HighestRating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HighestScore.aspx.cs">
+      <DependentUpon>HighestScore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HighestScore.aspx.designer.cs">
+      <DependentUpon>HighestScore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HittingRating.aspx.cs">
+      <DependentUpon>HittingRating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HittingRating.aspx.designer.cs">
+      <DependentUpon>HittingRating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="King.aspx.cs">
+      <DependentUpon>King.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="King.aspx.designer.cs">
+      <DependentUpon>King.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineChart.cs" />
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Message.aspx.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Message.aspx.designer.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessageNum.aspx.cs">
+      <DependentUpon>MessageNum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageNum.aspx.designer.cs">
+      <DependentUpon>MessageNum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly.aspx.cs">
+      <DependentUpon>Monthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monthly.aspx.designer.cs">
+      <DependentUpon>Monthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MoreRating.aspx.cs">
+      <DependentUpon>MoreRating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MoreRating.aspx.designer.cs">
+      <DependentUpon>MoreRating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Online.aspx.cs">
+      <DependentUpon>Online.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Online.aspx.designer.cs">
+      <DependentUpon>Online.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Overview.aspx.cs">
+      <DependentUpon>Overview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Overview.aspx.designer.cs">
+      <DependentUpon>Overview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreProcessUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ranklist.aspx.cs">
+      <DependentUpon>Ranklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ranklist.aspx.designer.cs">
+      <DependentUpon>Ranklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rating.aspx.cs">
+      <DependentUpon>Rating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rating.aspx.designer.cs">
+      <DependentUpon>Rating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMessage.cs" />
+    <Compile Include="testabcsh.aspx.cs">
+      <DependentUpon>testabcsh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testabcsh.aspx.designer.cs">
+      <DependentUpon>testabcsh.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\layout.css" />
+    <Content Include="css\patches\patch.css" />
+    <Content Include="css\screen\basemod.css" />
+    <Content Include="css\screen\content.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Face.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="HighestRating.aspx" />
+    <Content Include="HighestScore.aspx" />
+    <Content Include="HittingRating.aspx" />
+    <Content Include="images\bg_blue.png" />
+    <Content Include="King.aspx" />
+    <Content Include="Master.Master" />
+    <Content Include="Message.aspx" />
+    <Content Include="MessageNum.aspx" />
+    <Content Include="Monthly.aspx" />
+    <Content Include="MoreRating.aspx" />
+    <Content Include="Online.aspx" />
+    <Content Include="Overview.aspx" />
+    <Content Include="Ranklist.aspx" />
+    <Content Include="Rating.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="testabcsh.aspx" />
+    <Content Include="yaml\add-ons\accessible-tabs\jquery.tabs.js" />
+    <Content Include="yaml\add-ons\accessible-tabs\tabs.css" />
+    <Content Include="yaml\add-ons\microformats\images\external_link.png" />
+    <Content Include="yaml\add-ons\microformats\images\hcalendar.png" />
+    <Content Include="yaml\add-ons\microformats\images\hcard.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-geo.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-hatom.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-haudio.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-hcalendar-add.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-hcalendar-download.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-hcalendar.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-hcard-add.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-hcard-download.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-hcard.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-hresume.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-rel-tag.png" />
+    <Content Include="yaml\add-ons\microformats\images\icon-xfn.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-child.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-colleague-met.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-colleague.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-friend-met.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-friend.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-me.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-parent.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-small.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-spouse.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-sweetheart-met.png" />
+    <Content Include="yaml\add-ons\microformats\images\xfn\xfn-sweetheart.png" />
+    <Content Include="yaml\add-ons\microformats\microformats.css" />
+    <Content Include="yaml\add-ons\rtl-support\core\base-rtl.css" />
+    <Content Include="yaml\add-ons\rtl-support\core\iehacks-rtl.css" />
+    <Content Include="yaml\add-ons\rtl-support\core\slim_base-rtl.css" />
+    <Content Include="yaml\add-ons\rtl-support\core\slim_iehacks-rtl.css" />
+    <Content Include="yaml\add-ons\rtl-support\navigation\nav_shinybuttons-rtl.css" />
+    <Content Include="yaml\add-ons\rtl-support\navigation\nav_slidingdoor-rtl.css" />
+    <Content Include="yaml\add-ons\rtl-support\navigation\nav_vlist-rtl.css" />
+    <Content Include="yaml\add-ons\syncheight\jquery.syncheight.js" />
+    <Content Include="yaml\central_draft.css" />
+    <Content Include="yaml\core\base.css" />
+    <Content Include="yaml\core\iehacks.css" />
+    <Content Include="yaml\core\js\yaml-focusfix.js" />
+    <Content Include="yaml\core\slim_base.css" />
+    <Content Include="yaml\core\slim_iehacks.css" />
+    <Content Include="yaml\markup_draft.html" />
+    <Content Include="yaml\navigation\images\shiny_buttons\background.png" />
+    <Content Include="yaml\navigation\images\shiny_buttons\background_active.png" />
+    <Content Include="yaml\navigation\images\sliding_door\round\bg.gif" />
+    <Content Include="yaml\navigation\images\sliding_door\round\left.png" />
+    <Content Include="yaml\navigation\images\sliding_door\round\left_on.png" />
+    <Content Include="yaml\navigation\images\sliding_door\round\right.png" />
+    <Content Include="yaml\navigation\images\sliding_door\round\right_on.png" />
+    <Content Include="yaml\navigation\images\vlist\square\node.gif" />
+    <Content Include="yaml\navigation\images\vlist\square\node_minus.gif" />
+    <Content Include="yaml\navigation\images\vlist\square\node_plus.gif" />
+    <Content Include="yaml\navigation\images\vlist\square\subnode.gif" />
+    <Content Include="yaml\navigation\images\vlist\square\subnode_minus.gif" />
+    <Content Include="yaml\navigation\images\vlist\square\subnode_plus.gif" />
+    <Content Include="yaml\navigation\nav_shinybuttons.css" />
+    <Content Include="yaml\navigation\nav_slidingdoor.css" />
+    <Content Include="yaml\navigation\nav_vlist.css" />
+    <Content Include="yaml\patches\patch_layout_draft.css" />
+    <Content Include="yaml\patches\patch_nav_vlist.css" />
+    <Content Include="yaml\print\print_003_draft.css" />
+    <Content Include="yaml\print\print_020_draft.css" />
+    <Content Include="yaml\print\print_023_draft.css" />
+    <Content Include="yaml\print\print_100_draft.css" />
+    <Content Include="yaml\print\print_103_draft.css" />
+    <Content Include="yaml\print\print_120_draft.css" />
+    <Content Include="yaml\print\print_123_draft.css" />
+    <Content Include="yaml\print\print_draft.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SharpICTCLAS\SharpICTCLAS.csproj">
+      <Project>{E27DB382-5785-40F9-B671-197FD5B77569}</Project>
+      <Name>SharpICTCLAS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="auto.ashx" />
+    <Content Include="css\styles.css" />
+    <Content Include="img\shadow.png" />
+    <Content Include="js\ftod.js" />
+    <Content Include="js\jquery-1.3.2.min.js" />
+    <Content Include="js\jquery.autocomplete.js" />
+    <Content Include="js\lib\jquery-1.4.2.js" />
+    <Content Include="js\lib\jquery-1.4.2.min.js" />
+    <Content Include="js\minmax.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54606</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

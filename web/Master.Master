@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="acm_diy.Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 7]>
+<link href="css/patches/patch.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+    <link type="text/css" rel="stylesheet" href="css/coders.css" />
+    <style type="text/css">
+        .btn
+        {
+            height: 28px;
+            line-height: 24px;
+            margin: 0px 7px 0px 0px;
+            width: 100px;
+        }
+        .i
+        {
+            font: normal normal normal 16px/18px arial;
+            height: 24px;
+            margin: 0px 7px 0px 0px;
+            width: 364px;
+        }
+    </style>
+
+    <script type="text/javascript" language="javascript">
+        function SubmitKeyClick(button) {
+            if (event.keyCode == 13) {
+                event.cancelBubble = true;
+                event.returnValue = false;
+                button.click();
+            }
+        }   
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+
+    <script type="text/javascript">
+        $().ready(function() {
+            var options, a;
+            options = { serviceUrl: 'auto.ashx' };
+            a = $('#ctl00_txtSearch').autocomplete(options);
+        });
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" onsubmit="if(ctl00$txtSearch.value==''){return false;}">
+    <div>
+        <% if (Session["chk"] == null)
+           { %>
+        <span><font color="green"><strong>输入“ACM_DIY”即可进入~</strong></font></span>
+        <asp:TextBox ID="txtConform" runat="server"></asp:TextBox>
+        <asp:Button ID="btnConform"
+            runat="server" Text="确定" onclick="btnConform_Click" />
+        <% }
+           else
+           { %>
+        <div class="page_margins">
+            <div id="header">
+                <div id="topnav" role="contentinfo">
+                    <span>
+                        <asp:TextBox ID="txtSearch" runat="server" CssClass="i" AutoCompleteType="BusinessCity"></asp:TextBox>
+                        <asp:Button ID="btnSearch" runat="server" Text="ACM_DIY 搜索" OnClick="btnSearch_Click"
+                            CssClass="btn" />
+                    </span>
+                </div>
+                <h1>ACM_DIY 群 Rating</h1>
+                <br />
+                <span>友情链接：</span> <a href="http://contests.acmicpc.info/">[近期比赛]</a> | <a href="http://acmicpc.info/icpc2012/nenu_online.php">
+                    <b>[ICPC 2012 长春赛区网络赛 排行榜]</b></a>
+                <br />
+               <!-- <span>本站共有三个地址可访问，欢迎大家根据实际情况选择。</span> <a href="http://coder.buct.edu.cn/acm_diy/">[源地址]</a>
+                | <a href="http://acmdiyproxy.sempr.info/acm_diy/">[Sempr提供的代理]</a> | <a href="http://www.zlinkin.com/acmdiy/">
+                    [Lost提供的代理]</a> -->
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            <div id="footer">
+                ACM_DIY 群版权所有 by <a href="mailto:licstar@sina.com">licstar</a>.<br />
+                Layout based on <a href="http://www.yaml.de/">YAML</a>
+            </div>
+        </div>
+        <% } %>
+    </div>
+    </form>
+
+    <script src="yaml/core/js/yaml-focusfix.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-10155447-1");
+            pageTracker._trackPageview();
+        } catch (err) { }</script>
+
+</body>
+</html>
